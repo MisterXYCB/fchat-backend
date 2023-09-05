@@ -2,81 +2,22 @@
 
 Apis we need:
 
-- [ ] User
-    - [ ] Register
-    - [ ] Login -> Session token
-    - [ ] Logout -> Delete session token
-    - [ ] Update user info
-    - [ ] Get user info
-    - [ ] Delete user
-- [ ] Chat
-    - [ ] Create chat
-    - [ ] add user to chat
-    - [ ] add admin to chat
-    - [ ] remove user from chat
-    - [ ] remove admin from chat
-    - [ ] delete chat
-- [ ] Message
-    - [ ] Send message
-    - [ ] Get messages
-    - [ ] Delete message
-    - [ ] Edit message
-
-## User
-
-### Register
-
-Username + Email + Password
-->
-Username, email, password, UserId
-add to DB
-
-### Login
-
-Username / Email + Password
-->
-temporary session token
-
-### Logout
-
-Session token
-->
-Delete session token
-
-### Update user info
-
-Session token + new info
-->
-Updated user info
-
-```js
-userinfo = {
-    username: String,
-    email: String,
-    password: String,
-    profilePicture: String,
-    bio: String,
-}
-
-```
-### Get user info
-
-Username / Email / UserId
-->
-Public user info
-
-```js
-userinfo = {
-    username: String,
-    email: String,
-    profilePicture: String,
-    bio: String,
-}
-
-```
-
-### Delete user
-
-Session token
-->
-Delete user from DB
+- [ ] [User](./API-Documentation/User.md)
+    - [ ] [Register user](./API-Documentation/User.md#register-user)
+    - [ ] [Login](./API-Documentation/User.md#login) -> Session token
+    - [ ] [Logout](./API-Documentation/User.md#logout) -> Delete session token
+    - [ ] [Update user info](./API-Documentation/User.md#update-user-info)
+    - [ ] [Get user info](./API-Documentation/User.md#get-user-info)
+    - [ ] [Delete user](./API-Documentation/User.md#delete-user)
+- [ ] [Chat](./API-Documentation/Chat.md)
+    - [ ] [Create chat](./API-Documentation/Chat.md#create-chat)
+    - [ ] [add user](./API-Documentation/Chat.md#add-user)
+    - [ ] [add admin](./API-Documentation/Chat.md#add-admin)
+    - [ ] [remove user](./API-Documentation/Chat.md#remove-user)
+    - [ ] [remove admin](./API-Documentation/Chat.md#remove-admin)
+    - [ ] [delete chat](./API-Documentation/Chat.md#delete-chat)
+- [ ] [Message](./API-Documentation/Message.md)
+    - [ ] [Send message](./API-Documentation/Message.md#send-message)
+    - [ ] [Get messages](./API-Documentation/Message.md#get-messages)
+    - [ ] [Delete message](./API-Documentation/Message.md#delete-message)
+    - [ ] [Edit message](./API-Documentation/Message.md#edit-message)
