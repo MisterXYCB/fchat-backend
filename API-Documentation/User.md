@@ -28,6 +28,18 @@ new DB_User = {
 | --- | --- | --- | --- |
 | **POST** | `api/user/logout` | {sessionToken: String} | {status: String} |
 
+### Reset password
+
+| Methode | URL | Payload | Response |
+| --- | --- | --- | --- |
+| **POST** | `api/user/reset-password` | {email: String} | {status: String} |
+
+### Change password
+
+| Methode | URL | Payload | Response |
+| --- | --- | --- | --- |
+| **PUT** | `api/user/change-password` | {sessionToken: String, oldPassword: String, newPassword: String} | {status: String} |
+
 ### Update user info
 
 | Methode | URL | Payload | Response |
@@ -57,6 +69,12 @@ userInfo = {
     bio: String,
 }
 ```
+
+### Leave chat
+
+| Methode | URL | Payload | Response |
+| --- | --- | --- | --- |
+| **DELETE** | `api/user/leave-chat` | {sessionToken: String, chatId: String} | {status: String} |
 
 ### Delete user
 

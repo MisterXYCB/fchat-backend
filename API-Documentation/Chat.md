@@ -16,6 +16,23 @@ chatInfo = {
 }
 ```
 
+### Update chat
+
+| Methode | URL | Payload | Response |
+| --- | --- | --- | --- |
+| **PUT** | `api/chat/update` | {sessionToken: String, chatInfo: Object} | {status: String} |
+
+```js
+chatInfo = {
+    chatId: String,
+    name: String,
+    description: String,
+    profilePicture: String,
+    users: Array<String>,
+    admins: Array<String>
+}
+```
+
 ### add user
 
 | Methode | URL | Payload | Response |
