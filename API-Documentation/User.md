@@ -4,7 +4,7 @@
 
 | Methode | URL | Payload | Response |
 | --- | --- | --- | --- |
-| **POST** | `api/user/register` | {username: String, email: String, password: String} | {status: String} |
+| **POST** | `api/user/register` | {username: String, email: String, password: String} | {status: String, sessionToken: String} |
 
 ```js
 new DB_User = {
